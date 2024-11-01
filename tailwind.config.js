@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "3rem",
+        }
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
