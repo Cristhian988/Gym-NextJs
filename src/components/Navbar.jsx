@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { MdCancel } from "react-icons/md";
@@ -42,7 +43,7 @@ export default function Navbar() {
 
   return (
     <header className="bg-black text-white">
-      <nav className="container flex items-center justify-between py-3">
+      <nav className="container flex items-center justify-between py-3 ">
         <div>
           <Link href="/">
             <span className="text-3xl font-bold">Flex</span>

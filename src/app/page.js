@@ -1,9 +1,15 @@
 "use client"
+
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from "@/components/Navbar";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Reviews from "@/components/Reviews";
+import Pricing from "@/components/Pricing";
+import Blogs from "@/components/Blogs";
 
 export default function Home() {
   useEffect(() => {
@@ -17,8 +23,11 @@ export default function Home() {
   }, [])
   return (
     <div>
-      <Navbar />
       <Hero />
+      <About />
+      <Reviews />
+      <Pricing />
+      <Blogs />
     </div>
   );
 }
